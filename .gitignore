@@ -1,0 +1,29 @@
+# Build outputs and transient kernel artifacts
+/out*/
+*.log
+*.o
+*.a
+*.ko
+*.cmd
+*.d
+*.order
+*.builtin
+built-in.a
+vmlinux
+System.map
+.tmp_*
+/.thinlto-cache/
+
+# Local backups and extracted/generated images
+/pre_*.tar.gz
+/stock_*
+/hm2_*
+
+# Nested checkout metadata and Android build products
+/kernel/KernelSU/.git/
+/kernel/KernelSU/manager/.gradle/
+/kernel/KernelSU/manager/**/build/
+/kernel/KernelSU/manager/**/generated/
+
+# Android platform dependencies kept outside standalone kernel repository
+/external/
